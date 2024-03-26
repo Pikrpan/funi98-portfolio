@@ -1,0 +1,336 @@
+/* css reset stuff */
+#code-pic:hover {
+    transform: scale3d(1.2, 1.2, 1);
+}
+#code-pic{
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#youtube-pic:hover {
+    transform: scale3d(1.2, 1.2, 1);
+}
+#youtube-pic{
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#teaching-pic:hover {
+    transform: scale3d(1.2, 1.2, 1);
+}
+#teaching-pic{
+    transition-property: transform;
+    transition-duration: .5s;
+}
+/* default styling given to the whole body of visible content */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* main styles */
+
+
+/* HEADER STYLES */
+
+header {
+    /* background color */
+    background: #222222;
+    /* text color */
+    color: #ffffff;
+    /*padding top and bottom of 20px - padding left and right of 30px*/
+    padding: 20px 30px;
+    
+}
+
+/* logo nest inside header */
+
+header #page-header {
+    color: white;
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    width: 50%; 
+    display: inline-block;
+    font-size: 24px;
+}
+
+
+
+header img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+header h2 {
+    font-size: 16px;
+}
+
+/* MAIN NAVIGATION */
+
+header #main-navigation {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+/* footer*/
+
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* MAIN CONTENT */
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 900px;
+    text-align: center;
+    background: #555;
+    background-image: url('../img/background.jpg'); /* use image file as background */ 
+    /* The background-size CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions. */
+      /* cover - Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, it is cropped either vertically or horizontally so that no empty space remains. */
+    background-size: cover; 
+}
+
+.hero-content {
+    color: white;
+    padding-top: 130px;
+    line-height: 1;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 400%;
+}
+
+.hero-content p {
+    font-size: 250%; 
+    margin-bottom: 60px;
+}
+
+.hero-content a {
+    color: white;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 15px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 28px;
+    
+}
+
+/* SITE SECTION STYLINGS */
+
+.site-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.site-section-inside {
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
+}
+
+.site-section-secondary {
+    background: #EFEFEF;
+}
+
+
+/*About*/
+
+.about {
+    margin: auto;
+    background: #ECF0F1;
+    width: 50%;
+    padding: 50px 50px;
+    text-align: justify;
+}
+
+.about h2{
+    text-align: center;
+}
+
+/* FEATURE BOXES */
+
+.service-box {
+    display: inline-block;
+    width: 24%;
+    padding: 20px 30px;
+    line-height: 1;
+}
+
+.service-box img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-box h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 300px;
+    letter-spacing: 2px;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-box {
+    display: inline-block;
+    width: 27%;
+    padding: 20px 30px;   
+}
+
+.testimonial-content {
+    background: #ECF0F1;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.testimonial-author img {
+    float: left; 
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-author h5 {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+testimonial-author span {
+    color: #999;
+    font-size:14px;
+}
+
+/*mobile responsive*/
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER   */
+    header #page-header {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    header #main-navigation {
+        width: 100%;
+        display: block; 
+        text-align: center;
+    }
+    
+/*  HERO  */
+    .hero {
+        min-height: 300px;
+    }
+    .hero-content {
+        padding-top: 80px;
+    }
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-content a {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-width: 1px;
+        background: #FFF;
+        color: #333;
+        
+    }
+    
+/* FEATURE BOXES   */
+    .service-box {
+        width: 100%;
+        display: block;
+    }
+    
+/* TESTIMONIAL BOXES   */
+    .testimonial-box {
+        width: 100%;
+        display: block;
+}
+}
+
+
+
+.dropdown{
+    float: right;
+    width: 200px;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Webcam test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<style>
+    body{
+        margin: 50px;
+    }
+    
+
+    #videoElement{
+        width: 500px;
+        height: 375px;
+        background-color: grey;
+    }
+</style>
+</head>
+<body>
+    <h1>Display Webcam Stream</h1>
+    <div id="container">
+        <video autoplay id="videoElement" width="640" height="480">
+        </video>
+    </div>
+
+    <script>
+        let video = document.querySelector('#videoElement')
+        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
+            navigator.mediaDevices.getUserMedia({video: true}).then(stream => {
+                video.srcObject = stream
+                video.play
+            })
+        }
+    </script>
+    
+</body>
+</html>
